@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar > * {
+  font-size: 18px;
+}
+
+.header-title {
+  color: #18bc9c;
+}
+
+#designer-img {
+  width: 500px;
+}
+
+#code-icon {
+  font-size: 30px;
+  color: #18bc9c;
+}
+
+.project-icon {
+  font-size: 22px;
+}
+
+.card {
+  min-width: 20rem !important;
+}
+
+.more-projects-link {
+  font-size: 20px;
+  transition: all 150ms ease-in-out;
+}
+
+.more-projects-link:hover {
+  transform: translateX(8px);
+}

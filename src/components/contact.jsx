@@ -30,7 +30,7 @@ const Contact = () => {
       <h3 className='my-3'>Contact Me</h3>
       <div className='row'>
         <div className='col-lg-6'>
-          <form onSubmit={(e) => handleSubmit(e)}>
+          <form name='contact' onSubmit={(e) => handleSubmit(e)}>
             <div className='form-group'>
               <label htmlFor='name'>Your Name: </label>
               <input

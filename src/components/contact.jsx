@@ -27,7 +27,11 @@ const Contact = () => {
           </form>
         </div>
         <div className='col-lg-6 text-center'>
-          <img src={contact} alt='contact me' className='undraw-img'></img>
+          <img
+            src={contact}
+            alt='contact me'
+            className='undraw-img py-3 py-lg-0'
+          ></img>
         </div>
       </div>
     </div>

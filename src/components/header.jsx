@@ -17,7 +17,11 @@ const Header = () => {
             </Link>
           </div>
           <div className='col-lg-6 text-center'>
-            <img src={designerImg} alt='designer' className='undraw-img'></img>
+            <img
+              src={designerImg}
+              alt='designer'
+              className='undraw-img py-3 py-lg-0'
+            ></img>
           </div>
         </div>
       </div>

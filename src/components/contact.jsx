@@ -1,30 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import contact from '../imgs/contact.svg';
 
-// const encode = (data) => {
-//   return Object.keys(data)
-//     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-//     .join('&');
-// };
-
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  //   const handleSubmit = (e) => {
-  //     const data = { name, email, message };
-  //     fetch('/', {
-  //       method: 'POST',
-  //       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //       body: encode({ 'form-name': 'contact', ...data }),
-  //     })
-  //       .then(() => alert('Success!'))
-  //       .catch((error) => alert(error));
-
-  //     e.preventDefault();
-  //   };
-
   return (
     <div className='container py-5' id='contact-section'>
       <h3 className='my-3'>Contact Me</h3>
@@ -34,33 +11,15 @@ const Contact = () => {
             <input type='hidden' name='form-name' value='contact'></input>
             <div className='form-group'>
               <label htmlFor='name'>Your Name: </label>
-              <input
-                className='form-control'
-                type='text'
-                name='name'
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
+              <input className='form-control' type='text' name='name' />
             </div>
             <div className='form-group'>
               <label htmlFor='email'>Your Email: </label>
-              <input
-                className='form-control'
-                type='email'
-                name='email'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
+              <input className='form-control' type='email' name='email' />
             </div>
             <div className='form-group'>
               <label htmlFor='message'>Message: </label>
-              <textarea
-                className='form-control'
-                name='message'
-                rows='7'
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
+              <textarea className='form-control' name='message' rows='7' />
             </div>
             <button className='btn btn-primary' type='submit'>
               Send

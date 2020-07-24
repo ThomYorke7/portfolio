@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
 import contact from '../imgs/contact.svg';
 
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-};
+// const encode = (data) => {
+//   return Object.keys(data)
+//     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+//     .join('&');
+// };
 
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
-    const data = { name, email, message };
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...data }),
-    })
-      .then(() => alert('Success!'))
-      .catch((error) => alert(error));
+  //   const handleSubmit = (e) => {
+  //     const data = { name, email, message };
+  //     fetch('/', {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  //       body: encode({ 'form-name': 'contact', ...data }),
+  //     })
+  //       .then(() => alert('Success!'))
+  //       .catch((error) => alert(error));
 
-    e.preventDefault();
-  };
+  //     e.preventDefault();
+  //   };
 
   return (
     <div className='container py-5' id='contact-section'>

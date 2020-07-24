@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,11 +20,20 @@ code {
   font-size: 18px;
 }
 
+.nav-item:hover,
+.nav-item:focus {
+  cursor: pointer;
+}
+
+.btn {
+  font-size: 22px !important;
+}
+
 .header-title {
   color: #18bc9c;
 }
 
-#designer-img {
+.undraw-img {
   width: 500px;
 }
 
@@ -34,7 +47,7 @@ code {
 }
 
 .card {
-  min-width: 20rem !important;
+  min-width: 18rem !important;
 }
 
 .more-projects-link {
@@ -44,4 +57,20 @@ code {
 
 .more-projects-link:hover {
   transform: translateX(8px);
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 20px;
+}
+
+footer {
+  font-size: 16px;
+}
+
+.social-icons > * {
+  font-size: 30px;
 }

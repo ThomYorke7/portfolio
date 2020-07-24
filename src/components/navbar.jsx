@@ -1,12 +1,21 @@
 import React from 'react';
 import { RiCodeSSlashLine } from 'react-icons/ri';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
+
   return (
-    <nav className='navbar navbar-expand-lg navbar-dark bg-primary' id='navbar'>
-      <a className='navbar-brand' href='#'>
+    <nav
+      className='navbar navbar-expand-lg navbar-dark bg-primary sticky-top'
+      id='navbar'
+    >
+      <button className='btn' onClick={scrollToTop}>
         <RiCodeSSlashLine id='code-icon'></RiCodeSSlashLine>
-      </a>
+      </button>
+
       <button
         className='navbar-toggler'
         type='button'
@@ -20,23 +29,17 @@ const Navbar = () => {
       </button>
 
       <div className='collapse navbar-collapse' id='navbarColor01'>
-        <ul className='navbar-nav ml-auto'>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              Projects
-            </a>
-          </li>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              About
-            </a>
-          </li>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              Contact
-            </a>
-          </li>
-        </ul>
+        <div className='navbar-nav ml-auto'>
+          <Link class='nav-item nav-link' to='projects-section' offset={-70}>
+            Projects
+          </Link>
+          <Link class='nav-item nav-link' to='about-section' offset={-70}>
+            About
+          </Link>
+          <Link class='nav-item nav-link' to='contact-section'>
+            Contact
+          </Link>
+        </div>
       </div>
     </nav>
   );

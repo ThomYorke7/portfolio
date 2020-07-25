@@ -36,7 +36,7 @@ const Navbar = () => {
           <Link class='nav-item nav-link' to='about-section' offset={-70}>
             About
           </Link>
-          <Link class='nav-item nav-link' to='contact-section'>
+          <Link class='nav-item nav-link' to='contact-section' offset={-40}>
             Contact
           </Link>
         </div>
